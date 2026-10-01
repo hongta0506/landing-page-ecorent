@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECOREnt - Quản Lý Phòng Trọ Thông Minh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+          <rect width="40" height="40" rx="10" fill="#005249" />
+          <path d="M20 9L10 17V29C10 29.5523 10.4477 30 11 30H29C29.5523 30 30 29.5523 30 29V17L20 9Z" stroke="#48BB78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 30V20H24V30" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">ECOREnt</span>
+          <span class="brand-sub">QUẢN LÝ PHÒNG TRỌ THÔNG MINH</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Trang chủ</a>
+        <a href="#tinh-nang" class="nav-link">Tính năng</a>
+        <a href="#khach-hang" class="nav-link">Khách hàng</a>
+        <a href="pricing.html" class="nav-link">Bảng giá</a>
+        <a href="#ho-tro" class="nav-link">Hỗ trợ</a>
+        <a href="https://cms.ecorent.vn/" class="nav-link">Liên hệ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://cms.ecorent.vn/" class="btn btn-outline">Đăng nhập</a>
+        <a href="https://cms.ecorent.vn/" class="btn btn-primary">Dùng thử miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot">✦</span> PHẦN MỀM QUẢN LÝ PHÒNG TRỌ TOÀN DIỆN
+          </div>
+          <h1 class="hero-title">
+            Vận hành nhẹ hơn<br>
+            <span class="text-primary">Lợi nhuận cao hơn</span>
+          </h1>
+          <p class="hero-desc">
+            ECOREnt giúp chủ nhà, quản lý chuỗi trọ vận hành dễ dàng, minh bạch và hiệu quả – mọi lúc, mọi nơi.
+          </p>
+
+          <div class="feature-bullets">
+            <div class="bullet-item">
+              <span class="bullet-icon">✓</span> Dễ sử dụng
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">✓</span> Không cần cài đặt
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">✓</span> Hỗ trợ tận tâm
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="https://cms.ecorent.vn/" class="btn btn-primary btn-large">
+              Dùng thử miễn phí 6 tháng <span class="arrow-icon">→</span>
+            </a>
+            <button class="btn btn-video" id="btnPlayDemo">
+              <span class="play-circle">▶</span> Xem demo (2 phút)
+            </button>
+          </div>
+          <p class="hero-note">Không cần thẻ tín dụng <span>|</span> Thiết lập trong 5 phút</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="handwritten-tag hero-quote">
+            Không chỉ là phần mềm<br>Mà là người đồng hành
+          </div>
+          <!-- MOCKUP LAPTOP PREVIEW -->
+          <div class="laptop-wrapper">
+            <div class="laptop-screen">
+              <div class="app-ui-preview">
+                <div class="app-sidebar">
+                  <div class="app-logo">Ecorent</div>
+                  <div class="app-menu-item active">☷ Tổng quan</div>
+                  <div class="app-menu-item">🏢 Tòa nhà & phòng</div>
+                  <div class="app-menu-item">👥 Khách hàng & hợp đồng</div>
+                  <div class="app-menu-item">⚡ Quản lý xe</div>
+                  <div class="app-menu-item">📄 Hóa đơn</div>
+                  <div class="app-menu-item">💰 Quản lý nợ</div>
+                  <div class="app-menu-item">⚠️ Sự cố</div>
+                  <div class="app-menu-item">📊 Báo cáo</div>
+                </div>
+                <div class="app-main">
+                  <div class="app-topbar">
+                    <div>
+                      <h3>Xin chào, Anh Tuấn!</h3>
+                      <p>Cùng Ecorent quản lý vận hành hiệu quả hơn mỗi ngày.</p>
+                    </div>
+                    <div class="app-user-pill">
+                      <span>👤 Anh Tuấn</span>
+                      <small>Chủ nhà</small>
+                    </div>
+                  </div>
+
+                  <div class="app-stats-row">
+                    <div class="app-stat-card">
+                      <div class="stat-num">3</div>
+                      <div class="stat-lbl">Tổng tòa nhà</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="stat-num">96</div>
+                      <div class="stat-lbl">Tổng số phòng</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="stat-num stat-green">78</div>
+                      <div class="stat-lbl">Phòng đang thuê (81%)</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="stat-num stat-amber">12</div>
+                      <div class="stat-lbl">Phòng trống (13%)</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="stat-num stat-red">4</div>
+                      <div class="stat-lbl">Sắp trả phòng (4%)</div>
+                    </div>
+                    <div class="app-stat-card">
+                      <div class="stat-num">2</div>
+                      <div class="stat-lbl">Phòng đã nhận cọc (2%)</div>
+                    </div>
+                  </div>
+
+                  <div class="app-charts-row">
+                    <div class="app-card revenue-card">
+                      <div class="card-head">
+                        <div>
+                          <small>Doanh thu tháng 9/2026</small>
+                          <h4>152.500.000 đ <span class="badge-growth">+12%</span></h4>
+                        </div>
+                      </div>
+                      <div class="rev-summary">
+                        <span class="rev-item text-green">● Đã thu: 145.000.000 đ</span>
+                        <span class="rev-item text-red">● Chưa thu: 7.500.000 đ</span>
+                      </div>
+                    </div>
+
+                    <div class="app-card gauge-card">
+                      <small>Tỷ lệ lấp đầy phòng</small>
+                      <div class="gauge-display">
+                        <div class="gauge-circle">
+                          <span class="gauge-val">81%</span>
+                        </div>
+                        <div class="gauge-legend">
+                          <div>● Đang thuê: 78p (81%)</div>
+                          <div>● Trống: 12p (13%)</div>
+                          <div>● Sắp trả: 4p (4%)</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="app-card bar-chart-card">
+                      <small>Doanh thu 6 tháng gần nhất</small>
+                      <div class="chart-bars">
+                        <div class="bar-col"><div class="bar" style="height: 60%"></div><span>T4</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 75%"></div><span>T5</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 70%"></div><span>T6</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 85%"></div><span>T7</span></div>
+                        <div class="bar-col"><div class="bar" style="height: 80%"></div><span>T8</span></div>
+                        <div class="bar-col"><div class="bar active" style="height: 95%"></div><span>T9</span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="app-card incidents-table-card">
+                    <div class="card-head">
+                      <strong>Danh sách sự cố gần đây</strong>
+                      <span class="text-link">+ Tạo sự cố mới</span>
+                    </div>
+                    <table class="mini-table">
+                      <thead>
+                        <tr>
+                          <th>Trạng thái</th>
+                          <th>Tòa nhà</th>
+                          <th>Phòng</th>
+                          <th>Người báo cáo</th>
+                          <th>Mô tả</th>
+                          <th>Thời gian báo cáo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="tag tag-red">Chưa xử lý</span></td>
+                          <td>Tòa A</td>
+                          <td>A101</td>
+                          <td>Nguyễn Văn Nam</td>
+                          <td>Hư ống nước, nước chảy liên tục</td>
+                          <td>05/09/2026 09:15</td>
+                        </tr>
+                        <tr>
+                          <td><span class="tag tag-amber">Đang xử lý</span></td>
+                          <td>Tòa B</td>
+                          <td>B203</td>
+                          <td>Trần Thị Hoa</td>
+                          <td>Điều hòa không lạnh</td>
+                          <td>07/09/2026 18:30</td>
+                        </tr>
+                        <tr>
+                          <td><span class="tag tag-green">Đã xử lý</span></td>
+                          <td>Tòa A</td>
+                          <td>A305</td>
+                          <td>Lê Minh Tâm</td>
+                          <td>Bóng đèn hành lang bị hỏng</td>
+                          <td>06/09/2026 11:20</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STATS BAR -->
+    <section class="trust-stats-section">
+      <div class="container trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">👥</div>
+          <div class="trust-info">
+            <h3 class="trust-num" data-target="500">500+</h3>
+            <p class="trust-label">chủ nhà tin dùng</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🏢</div>
+          <div class="trust-info">
+            <h3 class="trust-num" data-target="10000">10.000+</h3>
+            <p class="trust-label">phòng được quản lý</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🛡️</div>
+          <div class="trust-info">
+            <h3 class="trust-num">99,9%</h3>
+            <p class="trust-label">ổn định hệ thống</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🎧</div>
+          <div class="trust-info">
+            <h3 class="trust-title">Hỗ trợ nhanh</h3>
+            <p class="trust-label">luôn đồng hành cùng bạn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FEATURES SECTION -->
+    <section class="features-section" id="tinh-nang">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-left">
+            <h2 class="section-title">Tất cả tính năng bạn cần, trong một nền tảng</h2>
+            <p class="section-sub">Quản lý chuyên nghiệp – Tiết kiệm thời gian – Tăng hiệu suất</p>
+          </div>
+          <a href="pricing.html" class="view-all-link">Xem tất cả tính năng →</a>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">🏢</div>
+            <h3 class="feature-title">Tòa nhà & phòng</h3>
+            <p class="feature-desc">Quản lý nhiều tòa nhà, sơ đồ phòng trực quan</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">👥</div>
+            <h3 class="feature-title">Khách hàng & hợp đồng</h3>
+            <p class="feature-desc">Lưu trữ thông tin, hợp đồng, nhắc hết hạn tự động</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">📄</div>
+            <h3 class="feature-title">Hóa đơn & thanh toán</h3>
+            <p class="feature-desc">Tính tiền điện, nước, phí dịch vụ, gửi hóa đơn qua Zalo</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">🚗</div>
+            <h3 class="feature-title">Quản lý xe</h3>
+            <p class="feature-desc">Quản lý xe theo phòng, hỗ trợ nhận diện biển số</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">⚠️</div>
+            <h3 class="feature-title">Sự cố</h3>
+            <p class="feature-desc">Theo dõi, xử lý và nhắc nhở các sự cố</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">📊</div>
+            <h3 class="feature-title">Báo cáo & thu chi</h3>
+            <p class="feature-desc">Doanh thu, chi phí, tỷ lệ lấp đầy với biểu đồ trực quan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTOMATION WORKFLOW SECTION -->
+    <section class="automation-section">
+      <div class="container automation-container">
+        <div class="automation-text">
+          <h2 class="section-title">Tự động hóa – Giảm việc thủ công</h2>
+          <p class="section-sub">Hệ thống tự động xử lý những công việc lặp lại, giúp bạn tập trung vào những việc quan trọng hơn.</p>
+        </div>
+
+        <div class="handwritten-tag automation-badge">
+          Tiết kiệm thời gian<br>Giảm thất thoát<br>Tăng hiệu suất
+        </div>
+
+        <div class="workflow-steps">
+          <div class="step-card">
+            <div class="step-icon">📄</div>
+            <h4 class="step-title">Tạo hóa đơn<br>tự động</h4>
+          </div>
+          <div class="step-arrow">→</div>
+
+          <div class="step-card">
+            <div class="step-icon zalo-bubble">Zalo</div>
+            <h4 class="step-title">Gửi qua Zalo<br>cho khách</h4>
+          </div>
+          <div class="step-arrow">→</div>
+
+          <div class="step-card">
+            <div class="step-icon">🔔</div>
+            <h4 class="step-title">Nhắc hạn<br>thanh toán</h4>
+          </div>
+          <div class="step-arrow">→</div>
+
+          <div class="step-card">
+            <div class="step-icon">💳</div>
+            <h4 class="step-title">Nhận diện<br>giao dịch</h4>
+          </div>
+          <div class="step-arrow">→</div>
+
+          <div class="step-card">
+            <div class="step-icon check-round">✓</div>
+            <h4 class="step-title">Gạch nợ<br>tự động</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE ANYWHERE & PERSONA AUDIENCE SECTION -->
+    <section class="mobile-audience-section">
+      <div class="container split-grid">
+        <!-- Left: Mobile Anywhere -->
+        <div class="split-col col-mobile">
+          <h2 class="section-title">Quản lý mọi lúc, mọi nơi</h2>
+          <p class="section-sub">Chỉ với một tài khoản, bạn có thể theo dõi toàn bộ hệ thống.</p>
+
+          <div class="perks-list">
+            <div class="perk-item">
+              <div class="perk-icon">📱</div>
+              <div>
+                <h4>Theo dõi doanh thu realtime</h4>
+                <p>Cập nhật mọi lúc, mọi nơi</p>
+              </div>
+            </div>
+            <div class="perk-item">
+              <div class="perk-icon">🔔</div>
+              <div>
+                <h4>Nhận thông báo ngay lập tức</h4>
+                <p>Thanh toán, hợp đồng, sự cố...</p>
+              </div>
+            </div>
+            <div class="perk-item">
+              <div class="perk-icon">☁️</div>
+              <div>
+                <h4>Không cần cài đặt</h4>
+                <p>Dùng ngay trên web và điện thoại</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Phone Mockup -->
+        <div class="split-col col-phone">
+          <div class="smartphone-frame">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="phone-header">
+                <span class="phone-time">15:01</span>
+                <span class="phone-brand">ECOREnt</span>
+              </div>
+              <div class="phone-notifications">
+                <div class="phone-noti noti-success">
+                  <div class="noti-icon">✓</div>
+                  <div class="noti-body">
+                    <div class="noti-head">
+                      <strong>Phòng 302 đã thanh toán</strong>
+                      <span>10:24</span>
+                    </div>
+                    <div class="noti-amount">5.250.000 đ</div>
+                    <div class="noti-desc">Công nợ đã được gạch tự động</div>
+                  </div>
+                </div>
+
+                <div class="phone-noti noti-danger">
+                  <div class="noti-icon">!</div>
+                  <div class="noti-body">
+                    <div class="noti-head">
+                      <strong>Phòng 405 quá hạn 3 ngày</strong>
+                      <span>Hôm qua</span>
+                    </div>
+                    <div class="noti-desc">Hệ thống đã gửi thông báo nhắc thanh toán</div>
+                  </div>
+                </div>
+
+                <div class="phone-noti noti-warning">
+                  <div class="noti-icon">📄</div>
+                  <div class="noti-body">
+                    <div class="noti-head">
+                      <strong>Hợp đồng 201 sắp hết hạn</strong>
+                      <span>16/09</span>
+                    </div>
+                    <div class="noti-desc">Còn 15 ngày</div>
+                  </div>
+                </div>
+
+                <div class="phone-noti noti-info">
+                  <div class="noti-icon">⚠️</div>
+                  <div class="noti-body">
+                    <div class="noti-head">
+                      <strong>Sự cố phòng 502</strong>
+                      <span>16/09</span>
+                    </div>
+                    <div class="noti-desc">vừa được tạo - Rò rỉ nước ở nhà vệ sinh</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Audience Personas -->
+        <div class="split-col col-audience">
+          <h2 class="section-title">Dành cho ai?</h2>
+          <p class="section-sub">Dù bạn quản lý 1 căn nhà hay cả chuỗi hàng trăm phòng, ECOREnt đều phù hợp.</p>
+
+          <div class="persona-cards">
+            <div class="persona-card">
+              <div class="persona-icon">🏠</div>
+              <h4>Chủ nhà cá nhân</h4>
+              <p>Dễ dùng, tiết kiệm thời gian</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">🏢</div>
+              <h4>Quản lý chuỗi trọ</h4>
+              <p>Quản lý tập trung, hiệu quả</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">👥</div>
+              <h4>Doanh nghiệp BĐS</h4>
+              <p>Tối ưu vận hành, mở rộng dễ dàng</p>
+            </div>
+          </div>
+
+          <div class="audience-actions">
+            <a href="https://cms.ecorent.vn/" class="btn btn-primary">Dùng thử miễn phí 6 tháng →</a>
+            <a href="pricing.html" class="btn btn-outline">Xem bảng giá →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMOTIONAL QUOTE BANNER -->
+    <section class="quote-banner-section">
+      <div class="container quote-container">
+        <div class="quote-box">
+          <span class="quote-mark">“</span>
+          <h3 class="quote-text">Quản lý dễ dàng – Cuộc sống nhẹ nhàng hơn</h3>
+          <span class="quote-mark">”</span>
+        </div>
+        <div class="handwritten-tag quote-subtext">
+          Nhà trọ tốt hơn<br>Cuộc sống tốt hơn
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand-col">
+        <a href="index.html" class="brand-logo footer-logo">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="10" fill="#005249" />
+            <path d="M20 9L10 17V29C10 29.5523 10.4477 30 11 30H29C29.5523 30 30 29.5523 30 29V17L20 9Z" stroke="#48BB78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 30V20H24V30" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="brand-text">
+            <span class="brand-name">ECOREnt</span>
+            <span class="brand-sub">QUẢN LÝ PHÒNG TRỌ THÔNG MINH</span>
+          </div>
+        </a>
+        <p class="footer-mission">
+          Đồng hành cùng chủ nhà, kiến tạo giải pháp quản lý phòng trọ hiện đại, minh bạch và bền vững.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" title="Facebook">f</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+          <a href="#" class="social-btn" title="TikTok">♪</a>
+          <a href="#" class="social-btn zalo-social" title="Zalo">Zalo</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Sản phẩm</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#tinh-nang">Tính năng</a></li>
+          <li><a href="pricing.html">Bảng giá</a></li>
+          <li><a href="#">Ứng dụng di động</a></li>
+          <li><a href="#">Cập nhật mới</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Hỗ trợ</h4>
+        <ul class="footer-links">
+          <li><a href="#">Hướng dẫn sử dụng</a></li>
+          <li><a href="pricing.html#faq">Câu hỏi thường gặp</a></li>
+          <li><a href="https://cms.ecorent.vn/">Liên hệ</a></li>
+          <li><a href="https://cms.ecorent.vn/">Yêu cầu tính năng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Về ECOREnt</h4>
+        <ul class="footer-links">
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-head">Liên hệ</h4>
+        <div class="contact-details">
+          <p><span class="contact-icon">✉</span> support@ecorent.vn</p>
+          <p><span class="contact-icon">📞</span> 1900 1234</p>
+          <p><span class="contact-icon">📍</span> TP. Hồ Chí Minh, Việt Nam</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">© 2026 ECOREnt. All rights reserved.</p>
+        <p class="slogan-badge">Quản lý thông minh – Kiến tạo giá trị bền vững</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
